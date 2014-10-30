@@ -368,7 +368,7 @@ function Update() {
 	//////////////////////////////////////////////////////////////
 	
 	//con esto se consigue que rota, pero falta asignarle algun tipo de direccion (para saber donde mira el tanque)
-	//porque tal y como esta con 'w' y 's' se mueve en una posicion relativa AL MAPA no al tanque.
+	//porque tal y como esta con 'w' y 's' o las flechas se mueve en una posicion relativa AL MAPA no al tanque.
 	var velocidadDeRotacion= 2;
 	
 	if(Input.GetKey("left")||Input.GetKey("a")){
