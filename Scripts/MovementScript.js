@@ -377,27 +377,6 @@ function Update() {
 	if(Input.GetKey("right")||Input.GetKey("d")){
 	transform.Rotate(0,0,velocidadDeRotacion);
 	}
-
-	
-	
-	
-	
-	
-/*	if (IsGrounded())
-	{
-		
-		transform.rotation = Quaternion.LookRotation(moveDirection);
-			
-	}
-	else
-	{
-		var xyMove = movement;
-		xyMove.y = 0;
-		if (xyMove.sqrMagnitude > 0.001)
-		{
-			transform.rotation = Quaternion.LookRotation(xyMove);
-		}
-	}*/
 	
 	// We are in jump mode but just became grounded
 	if (IsGrounded())
