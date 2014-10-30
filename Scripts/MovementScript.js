@@ -367,6 +367,22 @@ function Update() {
 	//                                                          //
 	//////////////////////////////////////////////////////////////
 	
+	//con esto se consigue que rota, pero falta asignarle algun tipo de direccion (para saber donde mira el tanque)
+	//porque tal y como esta con 'w' y 's' se mueve en una posicion relativa AL MAPA no al tanque.
+	var velocidadDeRotacion= 2;
+	
+	if(Input.GetKey("left")||Input.GetKey("a")){
+	transform.Rotate(0,0,-velocidadDeRotacion);
+	}
+	if(Input.GetKey("right")||Input.GetKey("d")){
+	transform.Rotate(0,0,velocidadDeRotacion);
+	}
+
+	
+	
+	
+	
+	
 /*	if (IsGrounded())
 	{
 		
